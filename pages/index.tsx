@@ -1,15 +1,20 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import { VStack, Flex, Heading, Container } from '@chakra-ui/react';
+import Cart from '../src/sections/cart';
+
+import Details from '../src/sections/details';
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
+  <Container maxW="container.xl" p={0}>
+    <Flex
+      height={{ base: 'auto', md: '100vh' }}
+      direction={{ base: 'column-reverse', md: 'row' }}
+      alignItems="center"
+      paddingY={{ base: 0, md: 20 }}
+    >
+      <Details />
+      <Cart />
+    </Flex>
+  </Container>
 )
 
 export default IndexPage
