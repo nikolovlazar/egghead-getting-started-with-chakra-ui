@@ -29,7 +29,7 @@ const Cart = () => {
       <VStack alignItems="flex-start" spacing={3}>
         <Heading size="2xl">Your cart</Heading>
         <Text>
-          If price is too hard on your eyes,{' '}
+          If the price is too hard on your eyes,{' '}
           <Button
             variant="link"
             colorScheme="black"
