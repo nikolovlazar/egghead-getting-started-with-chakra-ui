@@ -9,7 +9,7 @@ import {
   Stack,
   useColorMode,
   Button,
-  useColorModeValue
+  useColorModeValue,
 } from '@chakra-ui/react';
 
 const Cart = () => {

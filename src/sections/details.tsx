@@ -10,7 +10,7 @@ import {
   Select,
   SimpleGrid,
   Text,
-  VStack
+  VStack,
 } from '@chakra-ui/react';
 
 const Details = () => {

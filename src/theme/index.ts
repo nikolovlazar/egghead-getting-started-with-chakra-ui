@@ -2,33 +2,33 @@ import {
   extendTheme,
   theme as base,
   withDefaultColorScheme,
-  withDefaultVariant
+  withDefaultVariant,
 } from '@chakra-ui/react';
 
 const inputSelectStyles = {
   sizes: {
     md: {
       field: {
-        borderRadius: 'none'
-      }
-    }
+        borderRadius: 'none',
+      },
+    },
   },
   variants: {
     filled: {
       field: {
         _focus: {
-          borderColor: 'brand.500'
-        }
-      }
-    }
-  }
+          borderColor: 'brand.500',
+        },
+      },
+    },
+  },
 };
 
 const brandRing = {
   _focus: {
     ring: 2,
-    ringColor: 'brand.500'
-  }
+    ringColor: 'brand.500',
+  },
 };
 
 const theme = extendTheme(
@@ -44,19 +44,19 @@ const theme = extendTheme(
         600: '#71ab09',
         700: '#578602',
         800: '#3c5e00',
-        900: '#203300'
-      }
+        900: '#203300',
+      },
     },
     fonts: {
       heading: `Montserrat, ${base.fonts?.heading}`,
-      body: `Inter, ${base.fonts?.body}`
+      body: `Inter, ${base.fonts?.body}`,
     },
     components: {
       Button: {
         baseStyle: {
           rounded: 'none',
-          ...brandRing
-        }
+          ...brandRing,
+        },
       },
       Input: { ...inputSelectStyles },
       Select: { ...inputSelectStyles },
@@ -64,19 +64,19 @@ const theme = extendTheme(
         baseStyle: {
           control: {
             borderRadius: 'none',
-            ...brandRing
-          }
-        }
-      }
-    }
+            ...brandRing,
+          },
+        },
+      },
+    },
   },
   withDefaultColorScheme({
     colorScheme: 'brand',
-    components: ['Button', 'Checkbox', 'Input', 'Select']
+    components: ['Button', 'Checkbox', 'Input', 'Select'],
   }),
   withDefaultVariant({
     variant: 'filled',
-    components: ['Input', 'Select']
+    components: ['Input', 'Select'],
   })
 );
 
