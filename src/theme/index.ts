@@ -3,7 +3,7 @@ import {
   theme as base,
   withDefaultColorScheme,
   withDefaultVariant
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 
 const inputSelectStyles = {
   sizes: {
@@ -22,14 +22,14 @@ const inputSelectStyles = {
       }
     }
   }
-}
+};
 
 const brandRing = {
   _focus: {
     ring: 2,
     ringColor: 'brand.500'
   }
-}
+};
 
 const theme = extendTheme(
   {
@@ -78,6 +78,6 @@ const theme = extendTheme(
     variant: 'filled',
     components: ['Input', 'Select']
   })
-)
+);
 
-export default theme
+export default theme;
