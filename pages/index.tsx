@@ -1,4 +1,4 @@
-import { VStack, Flex, Heading, Container } from '@chakra-ui/react';
+import { Flex, Container } from '@chakra-ui/react';
 import Cart from '../src/sections/cart';
 
 import Details from '../src/sections/details';
