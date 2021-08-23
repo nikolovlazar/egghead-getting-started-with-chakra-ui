@@ -22,7 +22,7 @@ const Cart = () => {
       w="full"
       h="full"
       p={10}
-      spacing={10}
+      spacing={6}
       align="flex-start"
       bg={bgColor}
     >
@@ -60,7 +60,7 @@ const Cart = () => {
           </Heading>
         </Stack>
       </HStack>
-      <VStack spacing={6} alignItems="stretch" w="full">
+      <VStack spacing={4} alignItems="stretch" w="full">
         <HStack justifyContent="space-between">
           <Text color={secondaryTextColor}>Subtotal</Text>
           <Heading size="sm">$119.00</Heading>
@@ -73,12 +73,12 @@ const Cart = () => {
           <Text color={secondaryTextColor}>Taxes (estimated)</Text>
           <Heading size="sm">$23.80</Heading>
         </HStack>
-        <Divider />
-        <HStack justifyContent="space-between">
-          <Text color={secondaryTextColor}>Total</Text>
-          <Heading size="lg">$162.79</Heading>
-        </HStack>
       </VStack>
+      <Divider />
+      <HStack justifyContent="space-between" w="full">
+        <Text color={secondaryTextColor}>Total</Text>
+        <Heading size="lg">$162.79</Heading>
+      </HStack>
     </VStack>
   );
 };

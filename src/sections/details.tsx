@@ -62,8 +62,8 @@ const Details = () => {
         <GridItem colSpan={2}>
           <Checkbox defaultChecked>Ship to billing address.</Checkbox>
         </GridItem>
-        <GridItem colSpan={2} display="flex">
-          <Button variant="primary" size="lg" flex={1}>
+        <GridItem colSpan={2}>
+          <Button variant="primary" size="lg" w="full">
             Place order
           </Button>
         </GridItem>
