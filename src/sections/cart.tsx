@@ -38,7 +38,6 @@ const Cart = () => {
       <HStack
         spacing={{ base: 3, md: 6 }}
         alignItems={{ base: 'flex-start', md: 'center' }}
-        justifyContent="space-between"
         w="full"
       >
         <AspectRatio ratio={1} w={24}>
@@ -51,7 +50,7 @@ const Cart = () => {
           justifyContent="space-between"
           alignItems={{ base: 'flex-start', md: 'center' }}
         >
-          <VStack spacing={0} alignItems="flex-start">
+          <VStack w="full" spacing={0} alignItems="flex-start">
             <Heading size="md">Penny board</Heading>
             <Text color={secondaryTextColor}>PNYCOMP27541</Text>
           </VStack>
