@@ -8,7 +8,7 @@ const IndexPage = () => (
     <Flex
       h={{ base: 'auto', md: '100vh' }}
       direction={{ base: 'column-reverse', md: 'row' }}
-      py={{ base: 0, md: 20 }}
+      py={[0, 10, 20]}
     >
       <Details />
       <Cart />
