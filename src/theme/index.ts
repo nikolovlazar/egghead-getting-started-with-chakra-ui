@@ -85,7 +85,7 @@ const theme = extendTheme(
   },
   withDefaultColorScheme({
     colorScheme: 'brand',
-    components: ['Checkbox', 'Input', 'Select'],
+    components: ['Checkbox'],
   }),
   withDefaultVariant({
     variant: 'filled',
