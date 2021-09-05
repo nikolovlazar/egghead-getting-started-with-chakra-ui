@@ -7,8 +7,8 @@ import {
   Text,
   Divider,
   Stack,
-  useColorMode,
   Button,
+  useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react';
 
@@ -16,7 +16,6 @@ const Cart = () => {
   const { toggleColorMode } = useColorMode();
   const bgColor = useColorModeValue('gray.50', 'whiteAlpha.50');
   const secondaryTextColor = useColorModeValue('gray.600', 'gray.400');
-
   return (
     <VStack
       w="full"
@@ -30,7 +29,7 @@ const Cart = () => {
         <Heading size="2xl">Your cart</Heading>
         <Text>
           If the price is too hard on your eyes,{' '}
-          <Button variant="link" colorScheme="black" onClick={toggleColorMode}>
+          <Button onClick={toggleColorMode} variant="link" colorScheme="black">
             try changing the theme.
           </Button>
         </Text>
@@ -46,15 +45,15 @@ const Cart = () => {
         <Stack
           spacing={0}
           w="full"
-          direction={{ base: 'column', md: 'row' }}
+          direction="row"
           justifyContent="space-between"
-          alignItems={{ base: 'flex-start', md: 'center' }}
+          alignItems="center"
         >
           <VStack w="full" spacing={0} alignItems="flex-start">
             <Heading size="md">Penny board</Heading>
             <Text color={secondaryTextColor}>PNYCOMP27541</Text>
           </VStack>
-          <Heading size="sm" textAlign={{ base: 'start', md: 'end' }}>
+          <Heading size="sm" textAlign="end">
             $119.00
           </Heading>
         </Stack>

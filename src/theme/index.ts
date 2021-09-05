@@ -7,19 +7,19 @@ import {
 import { mode } from '@chakra-ui/theme-tools';
 
 const inputSelectStyles = {
-  sizes: {
-    md: {
-      field: {
-        borderRadius: 'none',
-      },
-    },
-  },
   variants: {
     filled: {
       field: {
         _focus: {
           borderColor: 'brand.500',
         },
+      },
+    },
+  },
+  sizes: {
+    md: {
+      field: {
+        borderRadius: 'none',
       },
     },
   },
@@ -57,9 +57,9 @@ const theme = extendTheme(
         variants: {
           primary: (props) => ({
             rounded: 'none',
-            backgroundColor: mode('brand.500', 'brand.200')(props),
-            color: mode('white', 'gray.800')(props),
             ...brandRing,
+            color: mode('white', 'gray.800')(props),
+            backgroundColor: mode('brand.500', 'brand.200')(props),
 
             _hover: {
               backgroundColor: mode('brand.600', 'brand.300')(props),
